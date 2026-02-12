@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Tools | Ultimate Resume AI</title>
+    <meta name="description" content="Free resume tools: ATS checker, keyword analyzer, resume scanner, cover letter generator, and more professional tools.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="resume tools, ATS checker, resume scanner, keyword analyzer, cover letter generator, resume analyzer">
+    <meta property="og:title" content="Free Resume Tools | Ultimate Resume AI">
+    <meta property="og:description" content="ATS checker, keyword analyzer, resume scanner, and other free tools to improve your resume.">
+    <meta property="og:image" content="/assets/images/tools/og-image.webp">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/css/main.min.css" as="style">
+    <link rel="preload" href="/js/tools.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/tools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8b5cf6">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-file-alt"></i>
+                <span>Ultimate<span class="highlight">Resume</span>AI</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/builder.html" class="nav-link">Builder</a>
+                <a href="/templates.html" class="nav-link">Templates</a>
+                <a href="/examples.html" class="nav-link">Examples</a>
+                <a href="/tools.html" class="nav-link active">Tools</a>
+                <a href="#!" class="nav-link premium">
+                    <i class="fas fa-crown"></i> Premium
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="/builder.html" class="btn-primary">
+                    <i class="fas fa-plus"></i> Create Resume
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tools-hero">
+        <div class="hero-content">
+            <h1>Free Resume Tools</h1>
+            <p class="hero-subtitle">Professional tools to analyze, optimize, and improve your resume. All completely free.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free Tools</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">No Signup</span>
+                    <span class="stat-label">Required</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Privacy</span>
+                    <span class="stat-label">First</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">AI-Powered</span>
+                    <span class="stat-label">Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Tools Grid -->
+    <section class="main-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Essential Resume Tools</h2>
+                <p>Everything you need to create a job-winning resume</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- ATS Checker -->
+                <div class="tool-card featured">
+                    <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-header">
+                            <h3>ATS Resume Checker</h3>
+                            <span class="tool-badge">Most Popular</span>
+                        </div>
+                        <p>Check if your resume will pass through Applicant Tracking Systems used by 99% of Fortune 500 companies.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Keyword analysis</span>
+                            <span><i class="fas fa-check"></i> Format checking</span>
+                            <span><i class="fas fa-check"></i> ATS score</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="ats-checker">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Keyword Analyzer -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Keyword Analyzer</h3>
+                        <p>Extract keywords from job descriptions and compare with your resume to identify missing skills.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Job description parsing</span>
+                            <span><i class="fas fa-check"></i> Keyword matching</span>
+                            <span><i class="fas fa-check"></i> Skill gap analysis</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="keyword-analyzer">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Resume Scanner -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-scanner"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Resume Scanner</h3>
+                        <p>Get instant feedback on your resume's structure, formatting, and content quality.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Structure analysis</span>
+                            <span><i class="fas fa-check"></i> Format checking</span>
+                            <span><i class="fas fa-check"></i> Content evaluation</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="resume-scanner">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Cover Letter Generator -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Cover Letter Generator</h3>
+                        <p>Create personalized cover letters tailored to specific job applications in minutes.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> AI-powered content</span>
+                            <span><i class="fas fa-check"></i> Multiple templates</span>
+                            <span><i class="fas fa-check"></i> Customizable</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="cover-letter">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Resume Summary Generator -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Summary Generator</h3>
+                        <p>Create compelling professional summaries that grab recruiters' attention in seconds.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Industry-specific</span>
+                            <span><i class="fas fa-check"></i> Experience-level based</span>
+                            <span><i class="fas fa-check"></i> Multiple variations</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="summary-generator">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Skills Extractor -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Skills Extractor</h3>
+                        <p>Extract and categorize skills from your experience to create a powerful skills section.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Skill categorization</span>
+                            <span><i class="fas fa-check"></i> Proficiency levels</span>
+                            <span><i class="fas fa-check"></i> Industry standards</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="skills-extractor">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Resume Length Checker -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-ruler"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Length Checker</h3>
+                        <p>Ensure your resume is the optimal length for your experience level and industry.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Word count analysis</span>
+                            <span><i class="fas fa-check"></i> Page length check</span>
+                            <span><i class="fas fa-check"></i> Conciseness score</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="length-checker">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Action Verb Suggester -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Action Verb Suggester</h3>
+                        <p>Replace weak phrases with powerful action verbs that demonstrate impact and leadership.</p>
+                        <div class="tool-features">
+                            <span><i class="fas fa-check"></i> Industry-specific verbs</span>
+                            <span><i class="fas fa-check"></i> Impact-level based</span>
+                            <span><i class="fas fa-check"></i> Synonym suggestions</span>
+                        </div>
+                        <button class="btn-primary use-tool" data-tool="action-verbs">
+                            <i class="fas fa-play"></i> Use Tool
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATS Checker Tool (Example Tool Interface) -->
+    <section class="tool-interface" id="ats-checker-tool" style="display: none;">
+        <div class="container">
+            <div class="tool-header">
+                <button class="back-to-tools">
+                    <i class="fas fa-arrow-left"></i> Back to Tools
+                </button>
+                <h2>ATS Resume Checker</h2>
+                <p>Upload your resume to check ATS compatibility</p>
+            </div>
+            
+            <div class="tool-container">
+                <div class="tool-input">
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>Upload Your Resume</h3>
+                        <p>Drag & drop your resume file or click to browse</p>
+                        <p class="formats">Supported: PDF, DOCX, TXT, RTF</p>
+                        <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx,.txt,.rtf" hidden>
+                        <button class="btn-secondary" id="browseBtn">Browse Files</button>
+                    </div>
+                    
+                    <div class="or-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="paste-area">
+                        <h3>Paste Resume Text</h3>
+                        <textarea id="resumeText" placeholder="Paste your resume text here..."></textarea>
+                        <div class="word-count">
+                            <span id="wordCount">0 words</span>
+                            <span id="charCount">0 characters</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <button class="btn-primary" id="analyzeBtn">
+                            <i class="fas fa-search"></i> Analyze Resume
+                        </button>
+                        <button class="btn-secondary" id="sampleBtn">
+                            <i class="fas fa-file-alt"></i> Use Sample Resume
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="tool-results" id="resultsArea" style="display: none;">
+                    <div class="results-header">
+                        <h3>Analysis Results</h3>
+                        <div class="score-display">
+                            <span class="score-label">ATS Score</span>
+                            <span class="score-value">85/100</span>
+                        </div>
+                    </div>
+                    
+                    <div class="results-grid">
+                        <div class="result-card good">
+                            <div class="result-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Formatting</h4>
+                                <p>Your resume uses ATS-friendly formatting</p>
+                                <div class="result-details">
+                                    <span>✓ No tables</span>
+                                    <span>✓ Standard fonts</span>
+                                    <span>✓ Proper headings</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card warning">
+                            <div class="result-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Keywords</h4>
+                                <p>Add more industry-specific keywords</p>
+                                <div class="result-details">
+                                    <span>⚠ Missing: "JavaScript", "React"</span>
+                                    <span>✓ Present: "HTML", "CSS"</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card good">
+                            <div class="result-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Length</h4>
+                                <p>Optimal 1-page length for your experience</p>
+                                <div class="result-details">
+                                    <span>✓ 450 words</span>
+                                    <span>✓ 1 page</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-card error">
+                            <div class="result-icon">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="result-content">
+                                <h4>Sections</h4>
+                                <p>Missing recommended sections</p>
+                                <div class="result-details">
+                                    <span>✗ Missing: Skills section</span>
+                                    <span>✓ Present: Experience, Education</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h4>Recommendations</h4>
+                        <ul>
+                            <li>Add a dedicated Skills section with technical skills</li>
+                            <li>Include more specific technologies like JavaScript and React</li>
+                            <li>Quantify achievements with numbers and percentages</li>
+                            <li>Use more action verbs at the beginning of bullet points</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="result-actions">
+                        <button class="btn-primary">
+                            <i class="fas fa-download"></i> Download Report
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-edit"></i> Edit in Builder
+                        </button>
+                        <button class="btn-text">
+                            <i class="fas fa-redo"></i> Analyze Another
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Tools Interfaces would follow similar pattern -->
+
+    <!-- Why Use Our Tools -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Use Our Resume Tools?</h2>
+                <p>Professional-grade tools, completely free</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your resume never leaves your browser. All analysis happens locally.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Results</h3>
+                    <p>Get detailed analysis and recommendations in seconds.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered</h3>
+                    <p>Advanced AI algorithms provide professional-level feedback.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Always Updated</h3>
+                    <p>Tools are regularly updated with latest ATS requirements and trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Optimize Your Resume?</h2>
+                <p>Use our tools to create a resume that stands out to both humans and ATS systems.</p>
+                <div class="cta-buttons">
+                    <a href="#ats-checker-tool" class="btn-primary btn-large use-tool" data-tool="ats-checker">
+                        <i class="fas fa-robot"></i> Check ATS Score
+                    </a>
+                    <a href="/builder.html" class="btn-secondary btn-large">
+                        <i class="fas fa-bolt"></i> Build Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Ultimate<span class="highlight">Resume</span>AI</span>
+                    </a>
+                    <p class="footer-description">
+                        Create professional resumes with AI-powered suggestions. Free, fast, and privacy-focused.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="/builder.html">Resume Builder</a></li>
+                        <li><a href="/templates.html">Templates</a></li>
+                        <li><a href="/examples.html">Examples</a></li>
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="#!">Premium Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Resume Guide</a></li>
+                        <li><a href="#!">ATS Tips</a></li>
+                        <li><a href="#!">Cover Letters</a></li>
+                        <li><a href="#!">Career Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">Terms of Service</a></li>
+                        <li><a href="#!">Cookie Policy</a></li>
+                        <li><a href="#!">GDPR</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ultimate Resume AI. All rights reserved. Made with <i class="fas fa-heart"></i> for job seekers worldwide.</p>
+                <div class="footer-links">
+                    <a href="#!">Sitemap</a>
+                    <a href="#!">Status</a>
+                    <a href="#!">FAQ</a>
+                    <a href="#!">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.min.js"></script>
+    <script src="/js/tools.js"></script>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    </script>
+    
+    <!-- Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</body>
+</html>

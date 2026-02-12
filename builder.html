@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" class="neon-theme" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Resume Builder | ResumeAI Pro</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/builder.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0a0a0f">
+    
+    <!-- Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3940256099942544" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Builder specific styles */
+        .builder-container {
+            display: grid;
+            grid-template-columns: 350px 1fr 350px;
+            gap: 20px;
+            min-height: calc(100vh - 70px);
+            padding: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .sidebar-left {
+            background: var(--dark-2);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--dark-4);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .editor-main {
+            background: var(--dark-2);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--dark-4);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .sidebar-right {
+            background: var(--dark-2);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--dark-4);
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .section-tabs {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .section-tab {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .section-tab:hover {
+            background: var(--dark-3);
+            color: white;
+        }
+        
+        .section-tab.active {
+            background: var(--neon-purple);
+            color: white;
+        }
+        
+        .form-section {
+            display: none;
+        }
+        
+        .form-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background: var(--dark-3);
+            border: 1px solid var(--dark-4);
+            border-radius: var(--border-radius);
+            color: white;
+            font-size: 14px;
+            transition: border-color var(--transition-fast);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--neon-purple);
+        }
+        
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .resume-preview-container {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            height: 100%;
+            min-height: 800px;
+        }
+        
+        .resume-preview {
+            padding: 40px;
+            color: #333;
+            height: 100%;
+            overflow-y: auto;
+        }
+        
+        .preview-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .preview-section.highlighted {
+            background: rgba(168, 85, 247, 0.1);
+            border-left: 3px solid var(--neon-purple);
+        }
+        
+        .preview-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+        }
+        
+        .preview-header h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        
+        .preview-subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .preview-contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .template-option {
+            background: var(--dark-3);
+            border-radius: var(--border-radius);
+            padding: 15px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border: 2px solid transparent;
+        }
+        
+        .template-option:hover {
+            transform: translateY(-5px);
+            border-color: var(--dark-4);
+        }
+        
+        .template-option.active {
+            border-color: var(--neon-purple);
+            background: rgba(168, 85, 247, 0.1);
+        }
+        
+        .template-preview-small {
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .template-preview-small .line {
+            width: 80%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 3px 0;
+            border-radius: 3px;
+        }
+        
+        .template-preview-small .line.short {
+            width: 60%;
+        }
+        
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            background: var(--dark-3);
+            border: 1px solid var(--dark-4);
+            border-radius: var(--border-radius);
+            color: white;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .action-btn:hover {
+            background: var(--dark-4);
+            border-color: var(--neon-purple);
+        }
+        
+        .action-btn.primary {
+            background: var(--neon-purple);
+            border-color: var(--neon-purple);
+        }
+        
+        .action-btn.primary:hover {
+            background: rgba(168, 85, 247, 0.9);
+        }
+        
+        .preview-mode-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .preview-mode-btn {
+            flex: 1;
+            padding: 8px;
+            background: var(--dark-3);
+            border: 1px solid var(--dark-4);
+            border-radius: var(--border-radius);
+            color: var(--text-secondary);
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .preview-mode-btn.active {
+            background: var(--neon-purple);
+            color: white;
+            border-color: var(--neon-purple);
+        }
+        
+        @media (max-width: 1200px) {
+            .builder-container {
+                grid-template-columns: 300px 1fr;
+            }
+            
+            .sidebar-right {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .builder-container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            
+            .sidebar-left {
+                order: 2;
+            }
+            
+            .editor-main {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <i class="fas fa-crown"></i>
+                <span>ResumeAI</span>
+                <sup class="badge-pro">PRO</sup>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="/templates.html" class="nav-link">
+                    <i class="fas fa-palette"></i> Templates
+                </a>
+                <a href="/examples.html" class="nav-link">
+                    <i class="fas fa-star"></i> Examples
+                </a>
+                
+                <div class="credits-display" id="credits-display" style="display: none;">
+                    <i class="fas fa-coins"></i>
+                    <span>0</span>
+                </div>
+            </div>
+            
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Builder -->
+    <div class="builder-container">
+        <!-- Left Sidebar - Form Editor -->
+        <div class="sidebar-left">
+            <div class="section-tabs" id="section-tabs">
+                <!-- Tabs will be populated by JavaScript -->
+            </div>
+            
+            <div class="form-sections">
+                <!-- Personal Info -->
+                <div class="form-section active" id="personal-section">
+                    <h3>Personal Information</h3>
+                    
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" data-resume-field="personal.name" 
+                               placeholder="John Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Professional Title</label>
+                        <input type="text" class="form-control" data-resume-field="personal.title" 
+                               placeholder="Software Engineer">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" data-resume-field="personal.email" 
+                                   placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" class="form-control" data-resume-field="personal.phone" 
+                                   placeholder="+1 (123) 456-7890">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" class="form-control" data-resume-field="personal.location" 
+                               placeholder="San Francisco, CA">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>LinkedIn URL</label>
+                        <input type="url" class="form-control" data-resume-field="personal.linkedin" 
+                               placeholder="https://linkedin.com/in/johndoe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Portfolio/GitHub</label>
+                        <input type="url" class="form-control" data-resume-field="personal.portfolio" 
+                               placeholder="https://github.com/johndoe">
+                    </div>
+                </div>
+                
+                <!-- Summary -->
+                <div class="form-section" id="summary-section">
+                    <h3>Professional Summary</h3>
+                    
+                    <div class="form-group">
+                        <label>Summary</label>
+                        <textarea class="form-control" data-resume-field="summary" 
+                                  placeholder="Experienced professional with 5+ years in software development. Specialized in building scalable web applications. Proven track record of delivering high-quality projects on time." 
+                                  rows="5"></textarea>
+                    </div>
+                    
+                    <button class="action-btn" data-ai-suggest="summary">
+                        <i class="fas fa-robot"></i> Get AI Suggestions
+                    </button>
+                </div>
+                
+                <!-- Experience -->
+                <div class="form-section" id="experience-section">
+                    <h3>Work Experience</h3>
+                    
+                    <div id="experience-items">
+                        <!-- Experience items will be populated by JavaScript -->
+                    </div>
+                    
+                    <button class="action-btn" data-add-item="experience">
+                        <i class="fas fa-plus"></i> Add Experience
+                    </button>
+                </div>
+                
+                <!-- Education -->
+                <div class="form-section" id="education-section">
+                    <h3>Education</h3>
+                    
+                    <div id="education-items">
+                        <!-- Education items will be populated by JavaScript -->
+                    </div>
+                    
+                    <button class="action-btn" data-add-item="education">
+                        <i class="fas fa-plus"></i> Add Education
+                    </button>
+                </div>
+                
+                <!-- Skills -->
+                <div class="form-section" id="skills-section">
+                    <h3>Skills</h3>
+                    
+                    <div id="skills-items">
+                        <!-- Skills items will be populated by JavaScript -->
+                    </div>
+                    
+                    <button class="action-btn" data-add-item="skills">
+                        <i class="fas fa-plus"></i> Add Skill Category
+                    </button>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="action-btn primary" id="save-resume">
+                    <i class="fas fa-save"></i> Save Resume
+                </button>
+                
+                <button class="action-btn" onclick="exportResume('pdf')">
+                    <i class="fas fa-file-pdf"></i> Export PDF
+                </button>
+                
+                <button class="action-btn" onclick="exportResume('docx')">
+                    <i class="fas fa-file-word"></i> Export DOCX
+                </button>
+                
+                <button class="action-btn" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print
+                </button>
+            </div>
+        </div>
+        
+        <!-- Main Editor - Resume Preview -->
+        <div class="editor-main">
+            <div class="editor-header">
+                <div class="preview-mode-selector">
+                    <button class="preview-mode-btn active" data-preview-mode="desktop">
+                        <i class="fas fa-desktop"></i> Desktop
+                    </button>
+                    <button class="preview-mode-btn" data-preview-mode="mobile">
+                        <i class="fas fa-mobile-alt"></i> Mobile
+                    </button>
+                    <button class="preview-mode-btn" data-preview-mode="print">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+                
+                <div class="editor-actions">
+                    <button class="btn-outline btn-sm" onclick="shareResume()">
+                        <i class="fas fa-share"></i> Share
+                    </button>
+                    
+                    <div class="word-count" id="word-count">
+                        0 words
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-preview-container desktop" id="resume-preview-container">
+                <div class="resume-preview modern" id="resume-preview">
+                    <!-- Resume preview will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Sidebar - Templates & Tools -->
+        <div class="sidebar-right">
+            <h3>Templates</h3>
+            
+            <div class="template-grid" id="templates-grid">
+                <!-- Templates will be populated by JavaScript -->
+            </div>
+            
+            <div class="tools-section">
+                <h3>AI Tools</h3>
+                
+                <div class="action-buttons">
+                    <button class="action-btn" data-ai-suggest="summary">
+                        <i class="fas fa-robot"></i> Improve Summary
+                    </button>
+                    
+                    <button class="action-btn" data-ai-suggest="experience">
+                        <i class="fas fa-magic"></i> Enhance Experience
+                    </button>
+                    
+                    <button class="action-btn" onclick="checkATS()">
+                        <i class="fas fa-search"></i> ATS Check
+                    </button>
+                    
+                    <button class="action-btn" onclick="generateCoverLetter()">
+                        <i class="fas fa-envelope"></i> Cover Letter
+                    </button>
+                </div>
+            </div>
+            
+            <div class="export-section">
+                <h3>Export Options</h3>
+                
+                <div class="export-buttons">
+                    <button class="action-btn" onclick="exportResume('pdf')">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </button>
+                    
+                    <button class="action-btn" onclick="exportResume('docx')">
+                        <i class="fas fa-file-word"></i> Word
+                    </button>
+                    
+                    <button class="action-btn" onclick="exportResume('html')">
+                        <i class="fas fa-code"></i> HTML
+                    </button>
+                    
+                    <button class="action-btn" onclick="exportResume('txt')">
+                        <i class="fas fa-file-alt"></i> Text
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Ad Banner -->
+            <div class="ad-banner" id="banner-ad-sidebar" style="margin-top: 30px;">
+                <!-- Ad will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/main.min.js"></script>
+    <script src="/js/builder.js"></script>
+    <script src="/js/ads-manager.js"></script>
+    <script src="/js/analytics.js"></script>
+    <script src="/js/pwa.js"></script>
+    
+    <script>
+        // Theme toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Update icon
+            const icon = document.querySelector('.theme-toggle i');
+            if (icon) {
+                icon.className = newTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+            }
+        }
+        
+        // Set initial theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        const icon = document.querySelector('.theme-toggle i');
+        if (icon) {
+            icon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+        
+        // Export functions
+        function exportResume(format) {
+            if (window.resumeBuilder) {
+                window.resumeBuilder.exportResume(format);
+            }
+        }
+        
+        function shareResume() {
+            if (typeof AdManager !== 'undefined') {
+                AdManager.showAd('share').then(() => {
+                    // Generate shareable link
+                    const resumeId = window.resumeBuilder?.currentResume?.id;
+                    if (resumeId) {
+                        const shareUrl = `${window.location.origin}/share/${resumeId}`;
+                        
+                        if (navigator.share) {
+                            navigator.share({
+                                title: 'My Resume',
+                                text: 'Check out my resume created with ResumeAI Pro',
+                                url: shareUrl
+                            });
+                        } else {
+                            // Copy to clipboard
+                            navigator.clipboard.writeText(shareUrl);
+                            alert('Share link copied to clipboard!');
+                        }
+                    }
+                });
+            }
+        }
+        
+        function checkATS() {
+            if (typeof AdManager !== 'undefined') {
+                AdManager.showAd('ats_check').then(() => {
+                    alert('ATS check would analyze your resume compatibility with applicant tracking systems.');
+                });
+            }
+        }
+        
+        function generateCoverLetter() {
+            if (typeof AdManager !== 'undefined') {
+                AdManager.showAd('cover_letter').then(() => {
+                    alert('Cover letter generator would create a customized cover letter for your resume.');
+                });
+            }
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update credits display
+            if (typeof AdManager !== 'undefined') {
+                AdManager.updateCreditsDisplay();
+            }
+            
+            // Initialize ads
+            if (typeof AdManager !== 'undefined') {
+                setTimeout(() => {
+                    AdManager.updateBannerAds();
+                }, 1000);
+            }
+            
+            // Track page view
+            if (window.analytics) {
+                window.analytics.trackPageView();
+            }
+        });
+    </script>
+</body>
+</html>

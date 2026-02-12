@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Examples | Ultimate Resume AI</title>
+    <meta name="description" content="100+ real resume examples for different industries and job levels. See what works for software engineers, marketers, students, and more.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="resume examples, CV examples, sample resume, professional resume examples, entry-level resume, senior resume">
+    <meta property="og:title" content="100+ Resume Examples for Every Job | Ultimate Resume AI">
+    <meta property="og:description" content="Real resume examples for software engineers, marketers, students, and professionals at all levels.">
+    <meta property="og:image" content="/assets/images/examples/og-image.webp">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/css/main.min.css" as="style">
+    <link rel="preload" href="/js/examples.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/examples.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-file-alt"></i>
+                <span>Ultimate<span class="highlight">Resume</span>AI</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/builder.html" class="nav-link">Builder</a>
+                <a href="/templates.html" class="nav-link">Templates</a>
+                <a href="/examples.html" class="nav-link active">Examples</a>
+                <a href="/tools.html" class="nav-link">Tools</a>
+                <a href="#!" class="nav-link premium">
+                    <i class="fas fa-crown"></i> Premium
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="/builder.html" class="btn-primary">
+                    <i class="fas fa-plus"></i> Create Resume
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="examples-hero">
+        <div class="hero-content">
+            <h1>Resume Examples That Get Jobs</h1>
+            <p class="hero-subtitle">100+ real resume examples for different industries, job levels, and career stages. Learn from successful resumes.</p>
+            
+            <div class="hero-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="exampleSearch" placeholder="Search examples by job title, industry, or keyword...">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="search-tags">
+                    <span class="tag">Software Engineer</span>
+                    <span class="tag">Marketing Manager</span>
+                    <span class="tag">Student</span>
+                    <span class="tag">Entry Level</span>
+                    <span class="tag">Senior</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Categories -->
+    <section class="industries-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Industry</h2>
+                <p>Find resume examples relevant to your field</p>
+            </div>
+            
+            <div class="industries-grid">
+                <a href="#technology" class="industry-card" data-industry="technology">
+                    <div class="industry-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>Software Engineers, DevOps, Data Scientists</p>
+                    <span class="count">25 examples</span>
+                </a>
+                
+                <a href="#business" class="industry-card" data-industry="business">
+                    <div class="industry-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business</h3>
+                    <p>Managers, Analysts, Consultants</p>
+                    <span class="count">18 examples</span>
+                </a>
+                
+                <a href="#design" class="industry-card" data-industry="design">
+                    <div class="industry-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design & Creative</h3>
+                    <p>UI/UX Designers, Graphic Designers</p>
+                    <span class="count">12 examples</span>
+                </a>
+                
+                <a href="#healthcare" class="industry-card" data-industry="healthcare">
+                    <div class="industry-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>Doctors, Nurses, Researchers</p>
+                    <span class="count">10 examples</span>
+                </a>
+                
+                <a href="#education" class="industry-card" data-industry="education">
+                    <div class="industry-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Teachers, Professors, Administrators</p>
+                    <span class="count">8 examples</span>
+                </a>
+                
+                <a href="#engineering" class="industry-card" data-industry="engineering">
+                    <div class="industry-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Engineering</h3>
+                    <p>Mechanical, Electrical, Civil Engineers</p>
+                    <span class="count">15 examples</span>
+                </a>
+                
+                <a href="#sales" class="industry-card" data-industry="sales">
+                    <div class="industry-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Sales & Marketing</h3>
+                    <p>Marketers, Sales Reps, Product Managers</p>
+                    <span class="count">14 examples</span>
+                </a>
+                
+                <a href="#finance" class="industry-card" data-industry="finance">
+                    <div class="industry-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Finance</h3>
+                    <p>Accountants, Bankers, Analysts</p>
+                    <span class="count">9 examples</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Level -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Experience Level</h2>
+                <p>See examples tailored to your career stage</p>
+            </div>
+            
+            <div class="experience-tabs">
+                <button class="exp-tab active" data-level="entry">Entry Level (0-2 years)</button>
+                <button class="exp-tab" data-level="mid">Mid Level (3-5 years)</button>
+                <button class="exp-tab" data-level="senior">Senior (6-10 years)</button>
+                <button class="exp-tab" data-level="executive">Executive (10+ years)</button>
+                <button class="exp-tab" data-level="student">Student & Recent Grad</button>
+            </div>
+            
+            <div class="examples-grid" id="examplesGrid">
+                <!-- Examples will be loaded dynamically -->
+                <div class="loading-examples">
+                    <div class="spinner"></div>
+                    <p>Loading resume examples...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Examples -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Resume Examples</h2>
+                <p>Most viewed and highest-rated examples</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-badge">
+                        <i class="fas fa-fire"></i> Most Popular
+                    </div>
+                    <div class="featured-content">
+                        <h3>Senior Software Engineer</h3>
+                        <p>FAANG-level resume with quantifiable achievements</p>
+                        <div class="stats">
+                            <span><i class="fas fa-eye"></i> 12.5k views</span>
+                            <span><i class="fas fa-download"></i> 3.2k downloads</span>
+                        </div>
+                        <button class="btn-primary view-example" data-example="software-senior">
+                            <i class="fas fa-external-link-alt"></i> View Example
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Highest Rated
+                    </div>
+                    <div class="featured-content">
+                        <h3>Marketing Manager</h3>
+                        <p>Results-driven resume with campaign metrics</p>
+                        <div class="stats">
+                            <span><i class="fas fa-eye"></i> 8.7k views</span>
+                            <span><i class="fas fa-download"></i> 2.1k downloads</span>
+                        </div>
+                        <button class="btn-primary view-example" data-example="marketing-manager">
+                            <i class="fas fa-external-link-alt"></i> View Example
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="featured-badge">
+                        <i class="fas fa-graduation-cap"></i> For Students
+                    </div>
+                    <div class="featured-content">
+                        <h3>Computer Science Student</h3>
+                        <p>Entry-level resume with projects and coursework</p>
+                        <div class="stats">
+                            <span><i class="fas fa-eye"></i> 15.3k views</span>
+                            <span><i class="fas fa-download"></i> 4.8k downloads</span>
+                        </div>
+                        <button class="btn-primary view-example" data-example="cs-student">
+                            <i class="fas fa-external-link-alt"></i> View Example
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resume Writing Tips</h2>
+                <p>Learn from these examples and improve your own resume</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Quantify Achievements</h3>
+                    <p>Use numbers and metrics to show impact. Instead of "managed social media," write "Increased engagement by 150%."</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Target Your Resume</h3>
+                    <p>Customize for each job application. Use keywords from the job description that ATS systems look for.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Clear Structure</h3>
+                    <p>Use consistent formatting with clear sections. Recruiters spend only 6-7 seconds on initial scan.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Action Verbs</h3>
+                    <p>Start bullet points with strong action verbs: Led, Developed, Implemented, Increased, Reduced, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Resume?</h2>
+                <p>Use our builder to create a resume inspired by these examples, but uniquely yours.</p>
+                <div class="cta-buttons">
+                    <a href="/builder.html" class="btn-primary btn-large">
+                        <i class="fas fa-bolt"></i> Start Building
+                    </a>
+                    <a href="/templates.html" class="btn-secondary btn-large">
+                        <i class="fas fa-th-large"></i> Browse Templates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Ultimate<span class="highlight">Resume</span>AI</span>
+                    </a>
+                    <p class="footer-description">
+                        Create professional resumes with AI-powered suggestions. Free, fast, and privacy-focused.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="/builder.html">Resume Builder</a></li>
+                        <li><a href="/templates.html">Templates</a></li>
+                        <li><a href="/examples.html">Examples</a></li>
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="#!">Premium Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Resume Guide</a></li>
+                        <li><a href="#!">ATS Tips</a></li>
+                        <li><a href="#!">Cover Letters</a></li>
+                        <li><a href="#!">Career Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">Terms of Service</a></li>
+                        <li><a href="#!">Cookie Policy</a></li>
+                        <li><a href="#!">GDPR</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ultimate Resume AI. All rights reserved. Made with <i class="fas fa-heart"></i> for job seekers worldwide.</p>
+                <div class="footer-links">
+                    <a href="#!">Sitemap</a>
+                    <a href="#!">Status</a>
+                    <a href="#!">FAQ</a>
+                    <a href="#!">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.min.js"></script>
+    <script src="/js/examples.js"></script>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    </script>
+    
+    <!-- Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</body>
+</html>

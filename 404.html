@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="neon-theme" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | ResumeAI Pro</title>
+    
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            background: var(--dark-1);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .error-search {
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            background: var(--dark-3);
+            border: 1px solid var(--dark-4);
+            border-radius: var(--border-radius);
+            color: white;
+        }
+        
+        .search-button {
+            padding: 12px 30px;
+            background: var(--neon-purple);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        
+        <h1 class="error-title">Page Not Found</h1>
+        
+        <p class="error-message">
+            Oops! The page you're looking for seems to have wandered off into the digital void.
+            Don't worry though, we've got plenty of other amazing features for you to explore!
+        </p>
+        
+        <div class="error-actions">
+            <a href="/" class="btn-primary">
+                <i class="fas fa-home"></i> Go Home
+            </a>
+            
+            <a href="/builder.html" class="btn-outline">
+                <i class="fas fa-file-alt"></i> Create Resume
+            </a>
+            
+            <a href="/templates.html" class="btn-outline">
+                <i class="fas fa-palette"></i> Browse Templates
+            </a>
+            
+            <button class="btn-outline" onclick="window.history.back()">
+                <i class="fas fa-arrow-left"></i> Go Back
+            </button>
+        </div>
+        
+        <div class="error-search">
+            <p style="margin-bottom: 15px; color: var(--text-muted);">
+                Or search for what you need:
+            </p>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search resumes, templates, tools...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+        
+        <div class="error-help" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--dark-4); max-width: 600px;">
+            <h3 style="margin-bottom: 15px; color: white;">Need Help?</h3>
+            <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" style="color: var(--neon-purple);">
+                    <i class="fas fa-question-circle"></i> Help Center
+                </a>
+                <a href="#" style="color: var(--neon-purple);">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+                <a href="#" style="color: var(--neon-purple);">
+                    <i class="fab fa-twitter"></i> Tweet @ResumeAI
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Search functionality
+        document.querySelector('.search-button').addEventListener('click', function() {
+            const query = document.querySelector('.search-input').value;
+            if (query.trim()) {
+                // Redirect to search results
+                window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+            }
+        });
+        
+        // Enter key support
+        document.querySelector('.search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-button').click();
+            }
+        });
+        
+        // Set theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

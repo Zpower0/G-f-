@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Templates | Ultimate Resume AI</title>
+    <meta name="description" content="Choose from 50+ professionally designed resume templates. ATS-friendly, modern, creative templates for every job industry.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="resume templates, CV templates, professional resume, ATS resume, modern resume, creative CV">
+    <meta property="og:title" content="50+ Professional Resume Templates | Ultimate Resume AI">
+    <meta property="og:description" content="Free professionally designed resume templates for every job industry.">
+    <meta property="og:image" content="/assets/images/templates/og-image.webp">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/css/main.min.css" as="style">
+    <link rel="preload" href="/js/templates.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/templates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <i class="fas fa-file-alt"></i>
+                <span>Ultimate<span class="highlight">Resume</span>AI</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/builder.html" class="nav-link">Builder</a>
+                <a href="/templates.html" class="nav-link active">Templates</a>
+                <a href="/examples.html" class="nav-link">Examples</a>
+                <a href="/tools.html" class="nav-link">Tools</a>
+                <a href="#!" class="nav-link premium">
+                    <i class="fas fa-crown"></i> Premium
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="/builder.html" class="btn-primary">
+                    <i class="fas fa-plus"></i> Create Resume
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="templates-hero">
+        <div class="hero-content">
+            <h1>Choose Your Perfect Resume Template</h1>
+            <p class="hero-subtitle">50+ professionally designed templates. ATS-optimized, modern, and creative designs for every industry.</p>
+            
+            <div class="hero-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="templateSearch" placeholder="Search templates by industry, style, or keyword...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Templates</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">ATS</span>
+                    <span class="stat-label">Optimized</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Updates</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+                <p>Find the perfect template for your industry and style</p>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="#professional" class="category-card" data-category="professional">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Professional</h3>
+                    <p>Corporate & Business</p>
+                    <span class="count">18 templates</span>
+                </a>
+                
+                <a href="#creative" class="category-card" data-category="creative">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative</h3>
+                    <p>Design & Art</p>
+                    <span class="count">12 templates</span>
+                </a>
+                
+                <a href="#modern" class="category-card" data-category="modern">
+                    <div class="category-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Modern</h3>
+                    <p>Tech & Startups</p>
+                    <span class="count">15 templates</span>
+                </a>
+                
+                <a href="#minimal" class="category-card" data-category="minimal">
+                    <div class="category-icon">
+                        <i class="fas fa-minimize"></i>
+                    </div>
+                    <h3>Minimal</h3>
+                    <p>Clean & Simple</p>
+                    <span class="count">8 templates</span>
+                </a>
+                
+                <a href="#ats" class="category-card" data-category="ats">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>ATS Friendly</h3>
+                    <p>Optimized for scanners</p>
+                    <span class="count">7 templates</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Grid -->
+    <section class="templates-section" id="templatesSection">
+        <div class="container">
+            <div class="section-header">
+                <div class="header-left">
+                    <h2>All Templates</h2>
+                    <p>Click any template to preview and customize</p>
+                </div>
+                <div class="header-right">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="professional">Professional</button>
+                        <button class="filter-btn" data-filter="creative">Creative</button>
+                        <button class="filter-btn" data-filter="modern">Modern</button>
+                        <button class="filter-btn" data-filter="minimal">Minimal</button>
+                        <button class="filter-btn" data-filter="ats">ATS Friendly</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="templates-grid" id="templatesGrid">
+                <!-- Templates will be loaded dynamically -->
+                <div class="loading-templates">
+                    <div class="spinner"></div>
+                    <p>Loading templates...</p>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn-secondary" id="loadMore">
+                    <i class="fas fa-sync"></i> Load More Templates
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Our Templates Stand Out</h2>
+                <p>Designed with both humans and machines in mind</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>ATS Optimized</h3>
+                    <p>All templates are designed to pass through Applicant Tracking Systems with high scores.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Change colors, fonts, layouts, and sections with our easy-to-use editor.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Looks perfect on any device - desktop, tablet, or mobile.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Multiple Formats</h3>
+                    <p>Export to PDF, Word, HTML, or plain text with one click.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>AI Suggestions</h3>
+                    <p>Get AI-powered content suggestions tailored to your template.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays on your device. No accounts required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Resume?</h2>
+                <p>Choose a template and start building your professional resume in minutes.</p>
+                <div class="cta-buttons">
+                    <a href="#templatesSection" class="btn-primary btn-large">
+                        <i class="fas fa-th-large"></i> Browse Templates
+                    </a>
+                    <a href="/builder.html" class="btn-secondary btn-large">
+                        <i class="fas fa-bolt"></i> Start from Scratch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Ultimate<span class="highlight">Resume</span>AI</span>
+                    </a>
+                    <p class="footer-description">
+                        Create professional resumes with AI-powered suggestions. Free, fast, and privacy-focused.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="/builder.html">Resume Builder</a></li>
+                        <li><a href="/templates.html">Templates</a></li>
+                        <li><a href="/examples.html">Examples</a></li>
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="#!">Premium Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Resume Guide</a></li>
+                        <li><a href="#!">ATS Tips</a></li>
+                        <li><a href="#!">Cover Letters</a></li>
+                        <li><a href="#!">Career Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">Terms of Service</a></li>
+                        <li><a href="#!">Cookie Policy</a></li>
+                        <li><a href="#!">GDPR</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ultimate Resume AI. All rights reserved. Made with <i class="fas fa-heart"></i> for job seekers worldwide.</p>
+                <div class="footer-links">
+                    <a href="#!">Sitemap</a>
+                    <a href="#!">Status</a>
+                    <a href="#!">FAQ</a>
+                    <a href="#!">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.min.js"></script>
+    <script src="/js/templates.js"></script>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    </script>
+    
+    <!-- Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</body>
+</html>
