@@ -1,0 +1,304 @@
+{
+  "examples": [
+    {
+      "id": "software-engineer-senior",
+      "title": "Senior Software Engineer",
+      "industry": "technology",
+      "experience": "senior",
+      "template": "modern",
+      "description": "FAANG-level senior software engineer resume with quantifiable achievements and leadership experience",
+      "keywords": ["JavaScript", "React", "Node.js", "AWS", "Leadership", "Architecture"],
+      "features": [
+        "Quantified achievements with metrics",
+        "Technical leadership experience",
+        "Open source contributions",
+        "Conference speaking"
+      ],
+      "stats": {
+        "views": 12500,
+        "downloads": 3200,
+        "rating": 4.9,
+        "ats_score": 92
+      },
+      "preview": "/assets/images/examples/software-senior.webp",
+      "sample_data": {
+        "personal": {
+          "name": "Alex Johnson",
+          "title": "Senior Software Engineer",
+          "location": "San Francisco, CA",
+          "email": "alex.johnson@email.com",
+          "phone": "(415) 555-0123",
+          "linkedin": "linkedin.com/in/alexjohnson",
+          "github": "github.com/alexjohnson"
+        },
+        "summary": "Senior Software Engineer with 8+ years of experience building scalable web applications. Led teams of 5-10 engineers. Reduced system latency by 60% and improved deployment frequency by 300%.",
+        "experience": [
+          {
+            "title": "Senior Software Engineer",
+            "company": "TechCorp Inc.",
+            "location": "San Francisco, CA",
+            "startDate": "2020-03",
+            "endDate": "present",
+            "description": "Led migration from monolith to microservices, reducing deployment time from 2 hours to 15 minutes. Improved system performance by 40% through optimization."
+          }
+        ]
+      }
+    },
+    {
+      "id": "marketing-manager-mid",
+      "title": "Marketing Manager",
+      "industry": "business",
+      "experience": "mid",
+      "template": "professional",
+      "description": "Results-driven marketing manager resume with campaign metrics and team leadership",
+      "keywords": ["Digital Marketing", "SEO", "Content Strategy", "Team Management", "ROI"],
+      "features": [
+        "Campaign ROI metrics",
+        "Team leadership experience",
+        "Budget management",
+        "Cross-functional collaboration"
+      ],
+      "stats": {
+        "views": 8700,
+        "downloads": 2100,
+        "rating": 4.7,
+        "ats_score": 88
+      },
+      "preview": "/assets/images/examples/marketing-manager.webp",
+      "sample_data": {
+        "personal": {
+          "name": "Sarah Chen",
+          "title": "Marketing Manager",
+          "location": "New York, NY",
+          "email": "sarah.chen@email.com",
+          "phone": "(212) 555-0198",
+          "linkedin": "linkedin.com/in/sarahchen"
+        },
+        "summary": "Marketing Manager with 5+ years of experience driving growth through digital campaigns. Increased organic traffic by 250% and improved conversion rates by 35%.",
+        "experience": [
+          {
+            "title": "Marketing Manager",
+            "company": "GrowthDigital Inc.",
+            "location": "New York, NY",
+            "startDate": "2019-06",
+            "endDate": "present",
+            "description": "Managed $500K annual marketing budget. Led team of 4 specialists. Increased qualified leads by 150% through targeted campaigns."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cs-student-entry",
+      "title": "Computer Science Student",
+      "industry": "technology",
+      "experience": "student",
+      "template": "student",
+      "description": "Entry-level resume for computer science students with projects and coursework",
+      "keywords": ["Python", "Java", "Web Development", "Projects", "Internship"],
+      "features": [
+        "Project portfolio",
+        "Relevant coursework",
+        "Technical skills section",
+        "Academic achievements"
+      ],
+      "stats": {
+        "views": 15300,
+        "downloads": 4800,
+        "rating": 4.8,
+        "ats_score": 85
+      },
+      "preview": "/assets/images/examples/cs-student.webp",
+      "sample_data": {
+        "personal": {
+          "name": "Michael Rodriguez",
+          "title": "Computer Science Student",
+          "location": "Austin, TX",
+          "email": "m.rodriguez@university.edu",
+          "phone": "(512) 555-0167",
+          "github": "github.com/mikerod",
+          "portfolio": "mikerod.dev"
+        },
+        "summary": "Computer Science senior with 3.8 GPA seeking software engineering roles. Developed 10+ projects using modern technologies. Completed internship at tech startup.",
+        "projects": [
+          {
+            "name": "E-commerce Platform",
+            "description": "Full-stack e-commerce application with React, Node.js, and MongoDB",
+            "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+            "url": "github.com/mikerod/ecommerce"
+          }
+        ]
+      }
+    },
+    {
+      "id": "data-scientist-mid",
+      "title": "Data Scientist",
+      "industry": "technology",
+      "experience": "mid",
+      "template": "modern",
+      "description": "Data scientist resume with machine learning projects and statistical analysis experience",
+      "keywords": ["Python", "Machine Learning", "SQL", "Statistics", "Data Visualization"],
+      "features": [
+        "ML project details",
+        "Statistical analysis",
+        "Data pipeline experience",
+        "Business impact metrics"
+      ],
+      "stats": {
+        "views": 7200,
+        "downloads": 1900,
+        "rating": 4.6,
+        "ats_score": 90
+      },
+      "preview": "/assets/images/examples/data-scientist.webp"
+    },
+    {
+      "id": "nurse-senior",
+      "title": "Registered Nurse",
+      "industry": "healthcare",
+      "experience": "senior",
+      "template": "professional",
+      "description": "Senior nursing resume with clinical experience and specialized certifications",
+      "keywords": ["Patient Care", "Clinical Skills", "Certifications", "Team Leadership", "Emergency"],
+      "features": [
+        "Clinical experience details",
+        "Specialized certifications",
+        "Patient care metrics",
+        "Team training experience"
+      ],
+      "stats": {
+        "views": 5600,
+        "downloads": 1400,
+        "rating": 4.7,
+        "ats_score": 87
+      },
+      "preview": "/assets/images/examples/nurse-senior.webp"
+    },
+    {
+      "id": "teacher-entry",
+      "title": "Elementary Teacher",
+      "industry": "education",
+      "experience": "entry",
+      "template": "professional",
+      "description": "Entry-level teaching resume with classroom experience and educational philosophy",
+      "keywords": ["Lesson Planning", "Classroom Management", "Curriculum", "Student Assessment", "Parent Communication"],
+      "features": [
+        "Teaching philosophy",
+        "Lesson plan examples",
+        "Student achievement metrics",
+        "Professional development"
+      ],
+      "stats": {
+        "views": 4900,
+        "downloads": 1200,
+        "rating": 4.5,
+        "ats_score": 86
+      },
+      "preview": "/assets/images/examples/teacher-entry.webp"
+    },
+    {
+      "id": "graphic-designer-creative",
+      "title": "Graphic Designer",
+      "industry": "design",
+      "experience": "mid",
+      "template": "creative",
+      "description": "Creative designer resume with portfolio focus and brand development experience",
+      "keywords": ["Adobe Creative Suite", "Brand Identity", "UI/UX", "Print Design", "Web Design"],
+      "features": [
+        "Portfolio integration",
+        "Brand development examples",
+        "Client project results",
+        "Design process description"
+      ],
+      "stats": {
+        "views": 6100,
+        "downloads": 1700,
+        "rating": 4.6,
+        "ats_score": 84
+      },
+      "preview": "/assets/images/examples/designer-mid.webp"
+    },
+    {
+      "id": "sales-executive-senior",
+      "title": "Sales Executive",
+      "industry": "sales",
+      "experience": "senior",
+      "template": "executive",
+      "description": "Senior sales executive resume with revenue growth and territory management",
+      "keywords": ["Revenue Growth", "Account Management", "Sales Strategy", "CRM", "Negotiation"],
+      "features": [
+        "Revenue metrics",
+        "Territory management",
+        "Sales team leadership",
+        "Client relationship building"
+      ],
+      "stats": {
+        "views": 5300,
+        "downloads": 1300,
+        "rating": 4.7,
+        "ats_score": 89
+      },
+      "preview": "/assets/images/examples/sales-executive.webp"
+    },
+    {
+      "id": "mechanical-engineer-entry",
+      "title": "Mechanical Engineer",
+      "industry": "engineering",
+      "experience": "entry",
+      "template": "professional",
+      "description": "Entry-level engineering resume with CAD experience and internship projects",
+      "keywords": ["CAD", "SolidWorks", "Prototyping", "Manufacturing", "Technical Drawings"],
+      "features": [
+        "CAD software proficiency",
+        "Engineering projects",
+        "Technical specifications",
+        "Quality control experience"
+      ],
+      "stats": {
+        "views": 4400,
+        "downloads": 1100,
+        "rating": 4.4,
+        "ats_score": 85
+      },
+      "preview": "/assets/images/examples/engineer-entry.webp"
+    },
+    {
+      "id": "financial-analyst-mid",
+      "title": "Financial Analyst",
+      "industry": "finance",
+      "experience": "mid",
+      "template": "professional",
+      "description": "Financial analyst resume with modeling experience and budget management",
+      "keywords": ["Financial Modeling", "Excel", "Budgeting", "Forecasting", "Data Analysis"],
+      "features": [
+        "Financial modeling examples",
+        "Cost reduction metrics",
+        "Budget management",
+        "Reporting automation"
+      ],
+      "stats": {
+        "views": 5800,
+        "downloads": 1500,
+        "rating": 4.6,
+        "ats_score": 88
+      },
+      "preview": "/assets/images/examples/financial-analyst.webp"
+    }
+  ],
+  "industries": [
+    { "id": "technology", "name": "Technology", "count": 25 },
+    { "id": "business", "name": "Business", "count": 18 },
+    { "id": "design", "name": "Design & Creative", "count": 12 },
+    { "id": "healthcare", "name": "Healthcare", "count": 10 },
+    { "id": "education", "name": "Education", "count": 8 },
+    { "id": "engineering", "name": "Engineering", "count": 15 },
+    { "id": "sales", "name": "Sales & Marketing", "count": 14 },
+    { "id": "finance", "name": "Finance", "count": 9 }
+  ],
+  "experience_levels": [
+    { "id": "student", "name": "Student & Recent Grad", "count": 22 },
+    { "id": "entry", "name": "Entry Level (0-2 years)", "count": 28 },
+    { "id": "mid", "name": "Mid Level (3-5 years)", "count": 35 },
+    { "id": "senior", "name": "Senior (6-10 years)", "count": 25 },
+    { "id": "executive", "name": "Executive (10+ years)", "count": 10 }
+  ]
+}

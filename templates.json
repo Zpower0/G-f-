@@ -1,0 +1,192 @@
+{
+  "templates": [
+    {
+      "id": "professional",
+      "name": "Professional Classic",
+      "category": "professional",
+      "description": "Clean, traditional design perfect for corporate jobs and conservative industries",
+      "color": "#3b82f6",
+      "sections": ["personal", "summary", "experience", "education", "skills", "certifications"],
+      "popular": true,
+      "features": ["ATS Optimized", "One Page", "Professional Fonts"],
+      "preview": "/assets/images/templates/professional.webp",
+      "created": "2024-01-15",
+      "updated": "2024-03-20",
+      "downloads": 12500,
+      "rating": 4.8
+    },
+    {
+      "id": "modern",
+      "name": "Modern Tech",
+      "category": "modern",
+      "description": "Contemporary design with clean lines, perfect for tech and startup roles",
+      "color": "#8b5cf6",
+      "sections": ["personal", "summary", "experience", "projects", "skills", "education", "languages"],
+      "popular": true,
+      "features": ["Modern Layout", "Color Accents", "Project Showcase"],
+      "preview": "/assets/images/templates/modern.webp",
+      "created": "2024-02-10",
+      "updated": "2024-03-25",
+      "downloads": 9800,
+      "rating": 4.7
+    },
+    {
+      "id": "creative",
+      "name": "Creative Portfolio",
+      "category": "creative",
+      "description": "Bold design for creatives, designers, and artists showcasing visual work",
+      "color": "#ef4444",
+      "sections": ["personal", "portfolio", "experience", "skills", "education", "awards"],
+      "popular": true,
+      "features": ["Portfolio Section", "Visual Design", "Creative Layout"],
+      "preview": "/assets/images/templates/creative.webp",
+      "created": "2024-01-25",
+      "updated": "2024-03-18",
+      "downloads": 7500,
+      "rating": 4.6
+    },
+    {
+      "id": "minimal",
+      "name": "Minimalist",
+      "category": "minimal",
+      "description": "Simple and elegant design focusing on content over decoration",
+      "color": "#10b981",
+      "sections": ["personal", "experience", "education", "skills"],
+      "popular": false,
+      "features": ["Ultra Clean", "Focus on Content", "Easy to Read"],
+      "preview": "/assets/images/templates/minimal.webp",
+      "created": "2024-02-15",
+      "updated": "2024-03-22",
+      "downloads": 5200,
+      "rating": 4.5
+    },
+    {
+      "id": "ats-optimized",
+      "name": "ATS Optimized",
+      "category": "ats",
+      "description": "Specifically designed to pass through Applicant Tracking Systems",
+      "color": "#f59e0b",
+      "sections": ["personal", "summary", "skills", "experience", "education", "certifications"],
+      "popular": false,
+      "features": ["ATS Friendly", "Keyword Optimized", "Simple Formatting"],
+      "preview": "/assets/images/templates/ats-optimized.webp",
+      "created": "2024-03-01",
+      "updated": "2024-03-28",
+      "downloads": 6800,
+      "rating": 4.9
+    },
+    {
+      "id": "executive",
+      "name": "Executive",
+      "category": "professional",
+      "description": "Sophisticated design for senior executives and leadership positions",
+      "color": "#6366f1",
+      "sections": ["personal", "executive_summary", "experience", "leadership", "education", "board_positions"],
+      "popular": false,
+      "features": ["Executive Layout", "Leadership Focus", "Multi-page"],
+      "preview": "/assets/images/templates/executive.webp",
+      "created": "2024-02-20",
+      "updated": "2024-03-24",
+      "downloads": 3200,
+      "rating": 4.7
+    },
+    {
+      "id": "academic",
+      "name": "Academic CV",
+      "category": "professional",
+      "description": "Comprehensive template for academic positions, research, and PhD applications",
+      "color": "#ec4899",
+      "sections": ["personal", "education", "research", "publications", "teaching", "grants", "conferences"],
+      "popular": false,
+      "features": ["Publication List", "Research Focus", "Academic Sections"],
+      "preview": "/assets/images/templates/academic.webp",
+      "created": "2024-01-30",
+      "updated": "2024-03-19",
+      "downloads": 2800,
+      "rating": 4.8
+    },
+    {
+      "id": "student",
+      "name": "Student & Graduate",
+      "category": "minimal",
+      "description": "Designed for students and recent graduates with limited work experience",
+      "color": "#06b6d4",
+      "sections": ["personal", "education", "projects", "skills", "coursework", "extracurricular"],
+      "popular": true,
+      "features": ["Project Focus", "Coursework Section", "Entry Level"],
+      "preview": "/assets/images/templates/student.webp",
+      "created": "2024-03-05",
+      "updated": "2024-03-27",
+      "downloads": 8900,
+      "rating": 4.6
+    },
+    {
+      "id": "two-column",
+      "name": "Two Column Modern",
+      "category": "modern",
+      "description": "Modern two-column layout for better information hierarchy",
+      "color": "#84cc16",
+      "sections": ["personal", "skills", "experience", "education", "projects", "languages"],
+      "popular": false,
+      "features": ["Two Column", "Modern Hierarchy", "Skill Focus"],
+      "preview": "/assets/images/templates/two-column.webp",
+      "created": "2024-02-28",
+      "updated": "2024-03-26",
+      "downloads": 4100,
+      "rating": 4.4
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "category": "creative",
+      "description": "Visual timeline layout showing career progression chronologically",
+      "color": "#f97316",
+      "sections": ["personal", "timeline_experience", "education", "skills", "milestones"],
+      "popular": false,
+      "features": ["Visual Timeline", "Career Progression", "Creative Design"],
+      "preview": "/assets/images/templates/timeline.webp",
+      "created": "2024-03-10",
+      "updated": "2024-03-29",
+      "downloads": 3600,
+      "rating": 4.3
+    }
+  ],
+  "categories": [
+    {
+      "id": "professional",
+      "name": "Professional",
+      "count": 18,
+      "description": "Traditional designs for corporate and business environments"
+    },
+    {
+      "id": "creative",
+      "name": "Creative",
+      "count": 12,
+      "description": "Bold designs for creatives, designers, and artists"
+    },
+    {
+      "id": "modern",
+      "name": "Modern",
+      "count": 15,
+      "description": "Contemporary designs for tech and startup roles"
+    },
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "count": 8,
+      "description": "Simple and clean designs focusing on content"
+    },
+    {
+      "id": "ats",
+      "name": "ATS Friendly",
+      "count": 7,
+      "description": "Optimized for Applicant Tracking Systems"
+    }
+  ],
+  "stats": {
+    "total_templates": 52,
+    "total_downloads": 856400,
+    "average_rating": 4.7,
+    "last_updated": "2024-03-30"
+  }
+}

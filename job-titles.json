@@ -1,0 +1,103 @@
+{
+  "technology": [
+    "Software Engineer", "Frontend Developer", "Backend Developer", "Full Stack Developer",
+    "DevOps Engineer", "Site Reliability Engineer", "Data Scientist", "Machine Learning Engineer",
+    "AI Engineer", "Data Engineer", "Database Administrator", "Systems Administrator",
+    "Network Engineer", "Security Engineer", "Cloud Architect", "Solutions Architect",
+    "Technical Lead", "Engineering Manager", "CTO", "Product Manager", "Project Manager",
+    "Scrum Master", "QA Engineer", "Test Engineer", "UX Designer", "UI Designer",
+    "Product Designer", "Technical Writer", "Support Engineer", "IT Manager",
+    "Mobile Developer", "Game Developer", "VR/AR Developer", "Blockchain Developer",
+    "Embedded Systems Engineer", "Firmware Engineer", "Hardware Engineer"
+  ],
+  "business": [
+    "Business Analyst", "Data Analyst", "Financial Analyst", "Operations Manager",
+    "Project Manager", "Program Manager", "Product Manager", "Marketing Manager",
+    "Sales Manager", "Account Manager", "Business Development Manager", "Strategy Manager",
+    "Consultant", "Management Consultant", "Operations Analyst", "Process Analyst",
+    "Supply Chain Manager", "Logistics Manager", "Procurement Manager", "Vendor Manager",
+    "Relationship Manager", "Client Success Manager", "Customer Success Manager",
+    "Account Executive", "Sales Executive", "Business Development Executive",
+    "Marketing Executive", "Brand Manager", "Digital Marketing Manager", "SEO Manager",
+    "Content Manager", "Social Media Manager", "Community Manager", "Event Manager",
+    "Office Manager", "Administrative Manager", "Executive Assistant", "HR Manager",
+    "Recruitment Manager", "Talent Acquisition Specialist", "Learning & Development Manager"
+  ],
+  "healthcare": [
+    "Registered Nurse", "Nurse Practitioner", "Physician Assistant", "Medical Doctor",
+    "Surgeon", "Dentist", "Pharmacist", "Physical Therapist", "Occupational Therapist",
+    "Speech Therapist", "Medical Assistant", "Dental Assistant", "Pharmacy Technician",
+    "Lab Technician", "Radiology Technician", "Sonographer", "Medical Technologist",
+    "Clinical Research Coordinator", "Research Assistant", "Research Scientist",
+    "Epidemiologist", "Public Health Specialist", "Health Educator", "Nutritionist",
+    "Dietitian", "Medical Coder", "Medical Biller", "Healthcare Administrator",
+    "Hospital Administrator", "Clinic Manager", "Practice Manager", "Medical Director",
+    "Chief Medical Officer", "Nurse Manager", "Charge Nurse", "Case Manager",
+    "Social Worker", "Counselor", "Psychologist", "Psychiatrist", "Therapist"
+  ],
+  "education": [
+    "Teacher", "Professor", "Lecturer", "Instructor", "Tutor", "Mentor", "Coach",
+    "Curriculum Developer", "Instructional Designer", "Educational Technologist",
+    "Librarian", "Media Specialist", "School Counselor", "Guidance Counselor",
+    "Career Counselor", "Academic Advisor", "Dean", "Principal", "Assistant Principal",
+    "School Administrator", "District Administrator", "Superintendent", "Education Director",
+    "Program Coordinator", "Grant Writer", "Researcher", "Research Assistant",
+    "Teaching Assistant", "Graduate Assistant", "Adjunct Professor", "Visiting Professor",
+    "Department Chair", "Faculty Member", "Education Consultant", "Training Specialist",
+    "Corporate Trainer", "Professional Development Coordinator", "Workshop Facilitator",
+    "Curriculum Specialist", "Assessment Coordinator", "Special Education Teacher",
+    "ESL Teacher", "Reading Specialist", "Math Coach", "Science Coordinator"
+  ],
+  "creative": [
+    "Graphic Designer", "UI Designer", "UX Designer", "Product Designer", "Web Designer",
+    "Motion Designer", "Animator", "Illustrator", "Artist", "Photographer",
+    "Videographer", "Video Editor", "Audio Engineer", "Sound Designer", "Music Producer",
+    "Creative Director", "Art Director", "Design Director", "Brand Designer",
+    "Packaging Designer", "Industrial Designer", "Fashion Designer", "Interior Designer",
+    "Architect", "Landscape Architect", "Urban Planner", "Game Designer",
+    "Level Designer", "Character Designer", "Concept Artist", "Storyboard Artist",
+    "Copywriter", "Content Writer", "Technical Writer", "Editor", "Proofreader",
+    "Journalist", "Reporter", "Columnist", "Author", "Screenwriter", "Playwright",
+    "Poet", "Translator", "Interpreter", "Content Strategist", "Content Manager",
+    "Social Media Content Creator", "Influencer", "Blogger", "Podcaster", "YouTuber"
+  ],
+  "engineering": [
+    "Mechanical Engineer", "Electrical Engineer", "Civil Engineer", "Chemical Engineer",
+    "Industrial Engineer", "Aerospace Engineer", "Automotive Engineer", "Biomedical Engineer",
+    "Environmental Engineer", "Structural Engineer", "Geotechnical Engineer", "Materials Engineer",
+    "Nuclear Engineer", "Petroleum Engineer", "Mining Engineer", "Marine Engineer",
+    "Naval Architect", "Acoustical Engineer", "Optical Engineer", "Robotics Engineer",
+    "Control Systems Engineer", "Instrumentation Engineer", "Manufacturing Engineer",
+    "Process Engineer", "Quality Engineer", "Safety Engineer", "Reliability Engineer",
+    "Test Engineer", "Validation Engineer", "Design Engineer", "Project Engineer",
+    "Field Engineer", "Service Engineer", "Applications Engineer", "Sales Engineer",
+    "Research Engineer", "Development Engineer", "Principal Engineer", "Engineering Manager",
+    "Director of Engineering", "Chief Engineer", "Engineering Consultant", "Engineering Technician"
+  ],
+  "finance": [
+    "Financial Analyst", "Investment Analyst", "Portfolio Manager", "Wealth Manager",
+    "Financial Advisor", "Investment Banker", "Trader", "Quantitative Analyst",
+    "Risk Analyst", "Credit Analyst", "Loan Officer", "Underwriter", "Actuary",
+    "Accountant", "Auditor", "Controller", "CFO", "Treasurer", "Tax Accountant",
+    "Management Accountant", "Cost Accountant", "Budget Analyst", "Financial Planner",
+    "Estate Planner", "Insurance Agent", "Insurance Underwriter", "Claims Adjuster",
+    "Mortgage Broker", "Real Estate Analyst", "Valuation Analyst", "M&A Analyst",
+    "Corporate Finance Analyst", "Financial Consultant", "Financial Manager",
+    "Finance Director", "VP of Finance", "Chief Financial Officer", "Finance Operations",
+    "Billing Specialist", "Payroll Specialist", "Collections Specialist", "Bookkeeper"
+  ],
+  "sales": [
+    "Sales Representative", "Account Executive", "Business Development Representative",
+    "Sales Development Representative", "Account Manager", "Key Account Manager",
+    "Enterprise Account Executive", "Regional Sales Manager", "National Sales Manager",
+    "Director of Sales", "VP of Sales", "Chief Revenue Officer", "Sales Engineer",
+    "Solutions Consultant", "Technical Sales", "Medical Sales Representative",
+    "Pharmaceutical Sales", "Inside Sales", "Outside Sales", "Field Sales",
+    "Retail Sales", "Wholesale Sales", "Channel Sales", "Partner Manager",
+    "Alliances Manager", "Sales Operations", "Sales Analyst", "Sales Trainer",
+    "Sales Enablement", "Customer Success Manager", "Account Success Manager",
+    "Client Success Manager", "Renewals Manager", "Customer Support", "Technical Support",
+    "Help Desk", "Call Center Representative", "Telemarketer", "Fundraiser",
+    "Merchandiser", "Buyer", "Purchasing Agent", "Procurement Specialist"
+  ]
+}
